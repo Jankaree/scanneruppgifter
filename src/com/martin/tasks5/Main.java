@@ -5,11 +5,17 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        String name = "";
+        System.out.println("input an int");
 
-        System.out.println("Whats your name?");
-        name = scannerText();
-        System.out.println("Player 1: " + name);
+        int iteration = scanPosInt();
+
+        for (int i = 0; i < iteration; i++) {
+            System.out.println(i);
+
+
+        }
+
+
 
         }
 
@@ -20,4 +26,23 @@ public class Main {
 
         return input;
     }
-}
+
+    public static int scanPosInt(){
+        int loop = 0;
+
+        while(loop <= 0) {
+            String input = scannerText();
+
+            try {
+                int input2 = Integer.parseInt(input);
+                loop = Integer.parseInt(input);
+            } catch (NumberFormatException var14) {
+                System.out.println("please only input a number higher than 0");
+            }
+
+        }
+        return loop;
+
+        }
+    }
+
