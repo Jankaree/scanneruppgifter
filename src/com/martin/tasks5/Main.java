@@ -5,15 +5,12 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("input an int");
-
-        int iteration = scanPosInt();
-
-        for (int i = 0; i < iteration; i++) {
-            System.out.println(i);
-
-
-        }
+        String name = "";
+      do{
+          System.out.println("insert name");
+          name = scannerText();
+          System.out.println("hello " + name);
+      }while(true);
 
 
 
