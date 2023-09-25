@@ -6,6 +6,9 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
+
+        //task 6: Check function "scanPosInt()"
+
         String stop = "";
         boolean run = true;
       do{
