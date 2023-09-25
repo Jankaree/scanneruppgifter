@@ -1,16 +1,23 @@
 package com.martin.tasks5;
 
+import java.util.Objects;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
 
         String name = "";
+        boolean run = true;
       do{
           System.out.println("insert name");
           name = scannerText();
           System.out.println("hello " + name);
-      }while(true);
+
+          if(Objects.equals(name, "stop")){
+              run = false;
+          }
+
+      }while(run);
 
 
 
