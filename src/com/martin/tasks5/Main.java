@@ -6,14 +6,23 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        String name = "";
+        String stop = "";
         boolean run = true;
       do{
-          System.out.println("insert name");
-          name = scannerText();
-          System.out.println("hello " + name);
 
-          if(Objects.equals(name, "stop")){
+          stop = scannerText();
+          switch (stop){
+              case "stop":
+                  break;
+              case "1":
+                  System.out.println("Throwing");
+                  break;
+              default:
+                  System.out.println("Wrong input");
+          }
+
+
+          if(Objects.equals(stop, "stop")){
               run = false;
           }
 
